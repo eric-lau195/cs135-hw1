@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+
+ErrorDocument 404 /errpages/new404.html
+ErrorDocument 403 /errpages/new403.html
+
+AddType image/x-icon .ico
